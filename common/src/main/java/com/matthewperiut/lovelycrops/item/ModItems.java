@@ -44,7 +44,7 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.MAIZE.get(), new Item.Settings().registryKey(CORN_SEEDS_KEY).arch$tab(ItemGroups.NATURAL)));
 
     public static final Identifier CORN_SOUP_ID = Identifier.of(MOD_ID, "corn_soup");
-    public static final RegistryKey<Item> CORN_SOUP_KEY = RegistryKey.of(RegistryKeys.ITEM, CORN_SEEDS_ID);
+    public static final RegistryKey<Item> CORN_SOUP_KEY = RegistryKey.of(RegistryKeys.ITEM, CORN_SOUP_ID);
     public static final RegistrySupplier<Item> CORN_SOUP = ITEMS.register(CORN_SOUP_ID,
             () -> new Item((new Item.Settings()).food(FoodComponents.BEETROOT_SOUP).registryKey(CORN_SOUP_KEY).arch$tab(ItemGroups.FOOD_AND_DRINK)));
 
