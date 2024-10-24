@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "lovelycrops",
+	"version": "${version}",
+	"name": "Lovely Crops",
+	"description": "Adds Grapes and Corn to Minecraft!",
+	"authors": [
+		"Slainlight"
+	],
+	"license": "MIT",
+	"icon": "assets/lovelycrops/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.matthewperiut.lovelycrops.fabric.LovelyCropsFabric"
+		],
+		"client": [
+			"com.matthewperiut.lovelycrops.fabric.LovelyCropsFabricClient"
+		]
+	},
+	"depends": {
+		"minecraft": ["1.21.*"],
+		"fabric-api": "*"
+	}
+}

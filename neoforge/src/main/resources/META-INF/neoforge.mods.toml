@@ -1,0 +1,29 @@
+modLoader="javafml" #mandatory
+loaderVersion="[2,)" #mandatory
+license="MIT"
+issueTrackerURL = "https://github.com/matthewperiut/Chisel-Reborn/issues"
+
+[[mods]]
+modId = "lovelycrops"
+version = "${version}"
+displayName = "Lovely Crops"
+authors = ["Slainlight"]
+description = '''
+Adds Grapes and Corn to Minecraft!
+'''
+logoFile = "assets/lovelycrops/icon.png"
+
+[[dependencies.chisel]]
+modId="minecraft"
+type="required"
+versionRange="[1.21]"
+
+[[dependencies.chisel]]
+modId="neoforge"
+type="required"
+versionRange="[0,)"
+
+[[dependencies.chisel]]
+modId="architectury"
+type="required"
+versionRange="[0,)"

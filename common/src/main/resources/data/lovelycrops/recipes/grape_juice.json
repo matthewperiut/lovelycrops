@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "lovelycrops:grapes"
+    },
+    "b": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    " b "
+  ],
+  "result": {
+    "item": "lovelycrops:grape_juice"
+  }
+}
