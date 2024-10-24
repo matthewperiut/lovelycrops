@@ -2,11 +2,8 @@ package com.matthewperiut.lovelycrops.neoforge;
 
 import com.matthewperiut.lovelycrops.LovelyCrops;
 import com.matthewperiut.lovelycrops.block.ModBlocks;
-import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.RenderLayers;
-import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;

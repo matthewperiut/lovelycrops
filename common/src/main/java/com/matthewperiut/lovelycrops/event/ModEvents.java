@@ -19,7 +19,7 @@ public class ModEvents {
         LootEvent.MODIFY_LOOT_TABLE.register(ModEvents::modifyLootTable);
     }
 
-    private static final Optional<RegistryKey<LootTable>> SHORT_GRASS_LOOT_TABLE = Blocks.SHORT_GRASS.getLootTableKey();
+    private static final Optional<RegistryKey<LootTable>> SHORT_GRASS_LOOT_TABLE = Optional.ofNullable(Blocks.SHORT_GRASS.getLootTableKey());
 
     private static void modifyLootTable(RegistryKey<LootTable> lootTableRegistryKey, LootEvent.LootTableModificationContext lootTableModificationContext, boolean builtin) {
         if (builtin && SHORT_GRASS_LOOT_TABLE.isPresent() && SHORT_GRASS_LOOT_TABLE.get().equals(lootTableRegistryKey)) {
