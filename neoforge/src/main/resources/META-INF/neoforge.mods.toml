@@ -13,17 +13,17 @@ Adds Grapes and Corn to Minecraft!
 '''
 logoFile = "assets/lovelycrops/icon.png"
 
-[[dependencies.chisel]]
+[[dependencies.lovelycrops]]
 modId="minecraft"
 type="required"
-versionRange="[1.21]"
+versionRange="[1.21,1.21.1]"
 
-[[dependencies.chisel]]
+[[dependencies.lovelycrops]]
 modId="neoforge"
 type="required"
 versionRange="[0,)"
 
-[[dependencies.chisel]]
+[[dependencies.lovelycrops]]
 modId="architectury"
 type="required"
 versionRange="[0,)"
