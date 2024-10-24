@@ -20,8 +20,8 @@ public class CornCrop extends CropBlock {
             Block.createCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 30.0D, 16.0D)
     };
 
-    public CornCrop() {
-        super(Settings.create().mapColor(MapColor.DARK_GREEN).nonOpaque().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
+    public CornCrop(AbstractBlock.Settings settings) {
+        super(settings.mapColor(MapColor.DARK_GREEN).nonOpaque().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY));
     }
 
     @Override

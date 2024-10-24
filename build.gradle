@@ -1,6 +1,6 @@
 plugins {
     id "architectury-plugin" version "3.4-SNAPSHOT"
-    id "dev.architectury.loom" version "1.6-SNAPSHOT" apply false
+    id "dev.architectury.loom" version "1.7-SNAPSHOT" apply false
 }
 
 architectury {
@@ -27,14 +27,6 @@ subprojects {
         mappings loom.layered {
             it.mappings "net.fabricmc:yarn:${rootProject.yarn_mappings}:v2"
             it.mappings("dev.architectury:yarn-mappings-patch-neoforge:1.21+build.4")
-        }
-        if (project.name == "common")
-        {
-            modCompileOnly "dev.emi:emi-xplat-intermediary:${project.emi_version}:api"
-            modCompileOnly "me.shedaniel:RoughlyEnoughItems-api:${project.rei_version}"
-        } else {
-            modCompileOnly "dev.emi:emi-${project.name}:${project.emi_version}:api"
-            modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-${project.name}:${project.rei_version}"
         }
     }
 }

@@ -12,13 +12,17 @@ import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKey;
 
+import java.util.Optional;
+
 public class ModEvents {
     public static void initialize() {
         LootEvent.MODIFY_LOOT_TABLE.register(ModEvents::modifyLootTable);
     }
 
+    private static final Optional<RegistryKey<LootTable>> SHORT_GRASS_LOOT_TABLE = Blocks.SHORT_GRASS.getLootTableKey();
+
     private static void modifyLootTable(RegistryKey<LootTable> lootTableRegistryKey, LootEvent.LootTableModificationContext lootTableModificationContext, boolean builtin) {
-        if (builtin && Blocks.SHORT_GRASS.getLootTableKey().equals(lootTableRegistryKey)) {
+        if (builtin && SHORT_GRASS_LOOT_TABLE.isPresent() && SHORT_GRASS_LOOT_TABLE.get().equals(lootTableRegistryKey)) {
             LootPool.Builder poolBuilder = LootPool.builder()
                     .rolls(ConstantLootNumberProvider.create(1))
                     .conditionally(RandomChanceLootCondition.builder(0.05f)) // Drops 100% of the time
