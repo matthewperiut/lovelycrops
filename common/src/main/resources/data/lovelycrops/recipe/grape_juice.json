@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "c": "lovelycrops:grapes",
+    "b": "minecraft:bowl"
+  },
+  "pattern": [
+    "ccc",
+    "ccc",
+    " b "
+  ],
+  "result": {
+    "count": 1,
+    "id": "lovelycrops:grape_juice"
+  }
+}
