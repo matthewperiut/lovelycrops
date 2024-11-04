@@ -4,6 +4,7 @@ import com.google.common.base.Supplier;
 import com.google.common.base.Suppliers;
 import com.matthewperiut.lovelycrops.block.ModBlocks;
 import com.matthewperiut.lovelycrops.event.ModEvents;
+import com.matthewperiut.lovelycrops.item.ComposterItems;
 import com.matthewperiut.lovelycrops.item.ModItems;
 import dev.architectury.registry.registries.RegistrarManager;
 import org.slf4j.Logger;
@@ -18,5 +19,9 @@ public class LovelyCrops {
 		ModItems.initialize();
 		ModBlocks.initialize();
 		ModEvents.initialize();
+	}
+
+	public static void post() {
+		ComposterItems.init();
 	}
 }

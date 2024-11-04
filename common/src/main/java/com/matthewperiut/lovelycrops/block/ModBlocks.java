@@ -21,7 +21,7 @@ public class ModBlocks {
             () -> new GrapesCrop(AbstractBlock.Settings.create().registryKey(GRAPEVINE_KEY)));
 
     public static final Identifier MAIZE_ID = Identifier.of(MOD_ID, "maize");
-    public static final RegistryKey<Block> MAIZE_KEY = RegistryKey.of(RegistryKeys.BLOCK, GRAPEVINE_ID);
+    public static final RegistryKey<Block> MAIZE_KEY = RegistryKey.of(RegistryKeys.BLOCK, MAIZE_ID);
     public static final RegistrySupplier<Block> MAIZE = BLOCKS.register(MAIZE_ID,
             () -> new CornCrop(AbstractBlock.Settings.create().registryKey(MAIZE_KEY)));
 

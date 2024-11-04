@@ -26,7 +26,7 @@ public class LovelyCropsNeoForge
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        LovelyCrops.post();
     }
 
     @EventBusSubscriber(modid = LovelyCrops.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

@@ -3,6 +3,7 @@ package com.matthewperiut.lovelycrops.item;
 import com.matthewperiut.lovelycrops.block.ModBlocks;
 import dev.architectury.registry.registries.Registrar;
 import dev.architectury.registry.registries.RegistrySupplier;
+import net.minecraft.block.ComposterBlock;
 import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
